@@ -321,7 +321,7 @@ ul {
   display: block;
 }
 
-.contacts-item {
+.contacts-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
