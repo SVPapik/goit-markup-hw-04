@@ -345,17 +345,17 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
+  fill: #afb1b8;
 }
 
 .card-soc-icon {
   width: 20px;
   height: 20px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.card-soc-link:hover.card-soc-icon,
-.card-soc-link:focus.card-soc-icon {
+.card-soc-link:hover .card-soc-icon {
   background-color: var(--accent-color);
   color: var(--background-color);
 }
