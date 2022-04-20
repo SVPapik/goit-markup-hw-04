@@ -158,7 +158,7 @@ ul {
 /* __________________________________________________________________HERO______________________________________ */
 
 .hero {
-  background-color: var(--secondary-background-color);
+  background-color: #c4c4c4;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -224,6 +224,32 @@ ul {
 
 .features-item:not(:last-child) {
   margin-right: 30px;
+}
+
+.features-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
+}
+
+.features-item:nth-child(1)::before {
+  background-image: url(../images/antenna.svg);
+}
+
+.features-item:nth-child(2)::before {
+  background-image: url(../images/clock.svg);
+}
+
+.features-item:nth-child(3)::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.features-item:nth-child(4)::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .features-title {
@@ -316,21 +342,22 @@ ul {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  display: block;
-  background-color: var(--accent-color);
   display: flex;
   justify-content: center;
   align-items: center;
+  outline: 1px solid tomato;
 }
 
 .card-soc-icon {
+  width: 20px;
+  height: 20px;
   fill: #afb1b8;
 }
 
-.card-soc-link:hover .card-soc-icon,
-.card-soc-link:focus .card-soc-icon {
+.card-soc-link:hover.card-soc-icon,
+.card-soc-link:focus.card-soc-icon {
   background-color: var(--accent-color);
-  color: red;
+  color: var(--background-color);
 }
 
 /* _________________________________________________________________FOOTER___________________________________________ */
