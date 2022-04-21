@@ -30,6 +30,14 @@ img {
   height: auto;
 }
 
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -43,16 +51,11 @@ img {
   margin: -1px;
 }
 
-/* Take off dots from all lists */
-
-ul {
-  list-style: none;
-}
-
 /* Take off underline from all links */
 
 .link,
-.location {
+.location,
+.card-link {
   text-decoration: none;
 }
 
@@ -152,7 +155,22 @@ ul {
 }
 
 .contacts-link {
+  display: flex;
   color: var(--primary-text-color);
+  align-items: center;
+}
+
+.icon-envelope,
+.icon-smartphone {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.icon-envelope:hover,
+.icon-smartphone:hover,
+.icon-envelope:focus,
+.icon-smartphone:focus {
+  fill: currentColor;
 }
 
 /* __________________________________________________________________HERO______________________________________ */
@@ -207,11 +225,6 @@ ul {
   background-color: #188ce8;
 }
 
-.hero-btn,
-.filter-btn {
-  cursor: pointer;
-}
-
 /* __________________________________________________________________FEATURES__________________________________ */
 
 .features-list {
@@ -226,7 +239,13 @@ ul {
   margin-right: 30px;
 }
 
-.features-item::before {
+.icon-features {
+  display: block;
+  padding: 25px 100px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+}
+/* .features-item::before {
   content: '';
   display: block;
   height: 120px;
@@ -250,7 +269,7 @@ ul {
 
 .features-item:nth-child(4)::before {
   background-image: url(../images/astronaut.svg);
-}
+} */
 
 .features-title {
   color: var(--title-text-color);
@@ -345,7 +364,6 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* outline: 1px solid tomato; */
   fill: #afb1b8;
 }
 
