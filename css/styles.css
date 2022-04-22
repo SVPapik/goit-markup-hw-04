@@ -5,6 +5,7 @@
   --background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --black-clear-color: #000000;
+  --icons-base-color: #afb1b8;
 }
 
 body {
@@ -53,9 +54,7 @@ ul {
 
 /* Take off underline from all links */
 
-.link,
-.location,
-.card-link {
+.link {
   text-decoration: none;
 }
 
@@ -233,6 +232,7 @@ ul {
 
 .features-item {
   width: 270px;
+  outline: 1px solid tomato;
 }
 
 .features-item:not(:last-child) {
@@ -240,11 +240,10 @@ ul {
 }
 
 .icon-features {
-  display: block;
-  padding: 25px 100px;
+  outline: 1px solid tomato;
   margin-bottom: 30px;
-  background-color: #f5f4fa;
 }
+
 /* .features-item::before {
   content: '';
   display: block;
@@ -364,18 +363,44 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: #afb1b8;
+  fill: var(--icons-base-color);
 }
 
-.card-soc-icon {
-  width: 20px;
-  height: 20px;
+.card-soc-link:hover {
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: block;
+  fill: var(--icons-base-color);
+  border: 1px solid var(--icons-base-color);
+  border-radius: 4px;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  color: var(--icons-base-color);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
   fill: currentColor;
 }
 
-.card-soc-link:hover .card-soc-icon {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+.clients-link:hover {
+  color: var(--accent-color);
+  border-color: currentColor;
 }
 
 /* _________________________________________________________________FOOTER___________________________________________ */
@@ -480,4 +505,5 @@ ul {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  color: var(--primary-text-color);
 }
