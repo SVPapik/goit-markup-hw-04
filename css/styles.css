@@ -346,7 +346,7 @@ ul {
   text-align: center;
   margin-bottom: 16px;
 }
-
+/* _______________Social icons________ */
 .card-soc-list {
   display: flex;
   justify-content: center;
@@ -366,10 +366,13 @@ ul {
   fill: var(--icons-base-color);
 }
 
-.card-soc-link:hover {
+.card-soc-link:hover,
+.card-soc-link:focus {
   background-color: var(--accent-color);
   fill: var(--background-color);
 }
+
+/* _______________________________________________________CLIENTS________________________________________________ */
 
 .clients-list {
   display: flex;
@@ -382,23 +385,22 @@ ul {
 }
 
 .clients-link {
-  display: block;
-  fill: var(--icons-base-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid var(--icons-base-color);
   border-radius: 4px;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
   color: var(--icons-base-color);
 }
 
 .clients-icon {
-  width: 106px;
-  height: 60px;
+  width: 172px;
+  height: 94px;
   fill: currentColor;
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--accent-color);
   border-color: currentColor;
 }
@@ -406,6 +408,7 @@ ul {
 /* _________________________________________________________________FOOTER___________________________________________ */
 
 .ftr {
+  display: block;
   background-color: var(--secondary-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -434,6 +437,15 @@ ul {
   margin-bottom: 9px;
 }
 
+.invitation {
+}
+
+.invitation-text {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /*___________________________________________***PORTFOLIO***__________________________________________________- */
 
 .filter-btn {
@@ -506,4 +518,9 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.project-card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
