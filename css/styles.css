@@ -59,6 +59,7 @@ ul {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+  fill: currentColor;
 }
 
 .container {
@@ -145,22 +146,15 @@ ul {
 }
 
 .contacts-link {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   color: var(--primary-text-color);
+  fill: currentColor;
 }
 
 .icon-envelope,
 .icon-smartphone {
   margin-right: 10px;
-  fill: currentColor;
-}
-
-.icon-envelope:hover,
-.icon-smartphone:hover,
-.icon-envelope:focus,
-.icon-smartphone:focus {
-  fill: currentColor;
 }
 
 /* __________________________________________________________________HERO______________________________________ */
