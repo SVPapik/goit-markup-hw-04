@@ -144,6 +144,7 @@ ul {
 
 .contacts-list {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -225,6 +226,7 @@ ul {
 }
 
 .features-item {
+  display: block;
   width: 270px;
   outline: 1px solid tomato;
 }
@@ -236,6 +238,8 @@ ul {
 .icon-features {
   outline: 1px solid tomato;
   margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 /* .features-item::before {
@@ -409,6 +413,7 @@ ul {
 
 .ftr .container {
   display: flex;
+  align-items: baseline;
 }
 
 .address {
@@ -431,7 +436,6 @@ ul {
 
 .social-ftr {
   margin-left: 70px;
-  margin-top: 12px;
 }
 
 .social-ftr-text {
